@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group 6 Dashboard</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #DDDDDD;
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #19427D;
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    width: 230px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+..btn {
+    margin-top: 10px;
+    padding: 10px;
+    background: #0065A2;
+    color: white;
+    border-radius: 8px;
+}
+
+.profile {
+    display: none; 
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile:target {
+    display: block;
+}
+
+.profile:target ~ .dashboard,
+#dashboard:target ~ .profile {
+    display: none;
+}
+
+/* BACK BUTTON */
+.back {
+    text-decoration: none;
+    color: #0065A2;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+</style>
+
+</head>
+
+<body>
+
+<section id="dashboard" class="dashboard">
+
+<header>
+    <h1>Group 4 Dashboard</h1>
+</header>
+
+<div class="card-container">
+
+    <a href="#aj" class="card">
+        <img src="aj.jpg" class="avatar">
+        <h3>Aj Bornales</h3>
+        <p>BSIT Student</p>
+        <div class="btn">View Profile</div>
+    </a>
+
+    <a href="#russel" class="card">
+        <img src="russ.jpg" class="avatar">
+        <h3>Russel Almodiel</h3>
+        <p>BSIT Student</p>
+        <div class="btn">View Profile</div>
+    </a>
+
+    <a href="#nashville" class="card">
+        <img src="nash.jpg" class="avatar">
+        <h3>Nashville Mickel Usi</h3>
+        <p>BSIT Student</p>
+        <div class="btn">View Profile</div>
+    </a>
+
+    <a href="#eubert" class="card">
+        <img src="eubert.jpg" class="avatar">
+        <h3>Eubert John Ybañez</h3>
+        <p>BSIT Student</p>
+        <div class="btn">View Profile</div>
+    </a>
+
+</div>
+
+</section>
+
+<section id="aj" class="profile">
+    <a href="#dashboard" class="back">← Back</a>
+    <img src="aj.jpg" class="profile-photo">
+    <h2>Aj Bornales</h2>
+    <p>BSIT-22013</p>
+    <p>I am Aj Bornales, BSIT student, second year this year with little interest in programming but still thriving (mapagpanggap lang).</p>
+</section>
+
+<section id="russel" class="profile">
+    <a href="#dashboard" class="back">← Back</a>
+    <img src="russ.jpg" class="profile-photo">
+    <h2>Russel Almodiel</h2>
+    <p>BSIT-22013</p>
+    <p>And those who were dancing were thought to be insane by those who could not hear the music.</p>
+</section>
+
+<section id="nashville" class="profile">
+    <a href="#dashboard" class="back">← Back</a>
+    <img src="nash.jpg" class="profile-photo">
+    <h2>Nashville Mickel Usi</h2>
+    <p>BSIT-22013</p>
+    <p>MA PAG PANGGAP NA IT<br>
+    I love the magic of making things happen on screen. Currently obsessed with clean HTML/CSS/JS and creating interfaces that just feel right. Always seeking the next challenge.</p>
+</section>
+
+<section id="eubert" class="profile">
+    <a href="#dashboard" class="back">← Back</a>
+    <img src="eubert.jpg" class="profile-photo">
+    <h2>Eubert John Ybañez</h2>
+    <p>BSIT-22013</p>
+    <p>I am Eubert Ybañez, 2nd year BSIT this year hoping to learn more about IT.</p>
+</section>
+
+</body>
+</html>
